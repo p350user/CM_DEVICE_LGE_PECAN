@@ -1,0 +1,81 @@
+           cyanogenmod 9 device source for lg optimus me p350 
+
+HOW TO USE:
+
+
+
+
+You need to have your environment configured exatly like here:
+
+http://source.android.com/source/initializing.html
+
+Next download a repo client (part "Installing Repo" of this link):
+
+http://source.android.com/source/downloading.html
+
+After this steps you have everything configured and can initialize your repository for 
+building cyanogenmod 9  for LG OPTIMUS ME P350
+
+To initialize your local repository using the CyanogenMod trees, use a command like this:
+
+CODE:
+
+repo init -u git://github.com/CyanogenMod/android.git -b ics
+
+
+
+
+THEN sync REPO
+
+CODE:
+
+repo sync
+
+When prompted, enter your real name and email address.
+
+NOW IT WILL TAKE LONG TIME AND IF YOU HAVE SLOW NET SPEED THEN YOU NEED TO WAIT FOR VERY LONG TIME 
+
+
+NOW BE READY TO COMPILE ICS ROM. NOW YOU NEED TO DEVICE FOLDER TO COMPILE ICS ROM WITHOUT 
+DEVICE FOLDER YOU CAN'T DO ANYTHING 
+YOU CAN USE MY ICS DEVICE FOLDER
+
+CODE:
+
+git clone git://github.com/cipsgokhle/CM_DEVICE_LGE_PECAN.git
+
+Now navigate into the folder:
+
+cd pecan
+
+Connect phone to computer and make sure USB debugging is enabled and you have adb set up.
+
+./extract-files.sh
+
+now it will get all Device Proprietary Files that needed 
+
+Navigate back to your home directory for building: 
+
+NOW WE START TO BUILD ICS:
+
+CODE:
+
+source build/envsetup.sh
+
+IF YOU GET PROBLEM TRY THIS
+
+. build/envsetup.sh
+
+Get your list of devices: 
+
+and start to compile 
+
+NOW cm9 WAS STARTED TO BUILD WAIT FOR SOME TIME UNTILL YOU WILL NOT GET 'Package complete'  MSG
+
+NOW cm9 IS READY COPY TO YOUR PHONE SDCARD AND FLASH IT
+
+ENJOY cm9 ON P350
+
+ 
+ 
+
